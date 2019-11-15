@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    list-style: none;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    object-fit: cover;
+}
