@@ -1,0 +1,29 @@
+<h1>New User</h1>
+
+<%# <%= render 'shared/errors' %>
+<%# <%= render 'form', user: @user %>
+
+<%# <% action = (user.persisted? ? user_url(user) : users_url) %> 
+<%# <% method = (user.persisted? ? :patch : :post) %> 
+
+<form action="/session" method="post">
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <label for="user_name">Username</label>
+  <input
+    type="text"
+    name="user[name]"
+    id="user_name">
+  
+  <br>
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    name="user[password]"
+    id="password">
+
+  <%# <% submit_text = (user.persisted? ? 'Update' : 'Create') + ' user!' %>
+  <input type="submit" value="Log In!">
+</form>
